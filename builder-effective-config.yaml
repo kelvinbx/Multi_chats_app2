@@ -1,0 +1,21 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.kelvin.multi-chat-app
+productName: Multi Chat App
+files:
+  - filter:
+      - '**/*'
+      - '!**/*.map'
+      - '!node_modules/**/*'
+      - 7tv-extension/**/*
+asarUnpack:
+  - 7tv-extension/**/*
+win:
+  target: nsis
+nsis:
+  oneClick: false
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Multi Chat App
+electronVersion: 29.4.6
